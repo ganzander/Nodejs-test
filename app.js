@@ -17,7 +17,7 @@ app.use("/api/", require("./routes/cart"));
 app.use("/api/", require("./routes/order"));
 
 app.get("/api/", (req, res) => {
-  res.send("Hello");
+  res.send({ msg: "Hello World" });
 });
 
 app.listen(port, () => {
