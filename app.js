@@ -11,12 +11,12 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.use("/", require("./routes/user"));
-app.use("/", require("./routes/food"));
-app.use("/", require("./routes/cart"));
-app.use("/", require("./routes/order"));
+app.use("/api/", require("./routes/user"));
+app.use("/api/", require("./routes/food"));
+app.use("/api/", require("./routes/cart"));
+app.use("/api/", require("./routes/order"));
 
-app.get("/", (req, res) => {
+app.get("/api/", (req, res) => {
   res.send("Hello");
 });
 
